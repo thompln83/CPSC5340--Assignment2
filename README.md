@@ -1,3 +1,27 @@
+
+# Assignment: Introduction
+CPSC 5340 - Mobile Applications Development 2: 
+Assignment-2-Cryptoconvert
+
+Instructions
+Your task is to add the Crypto converter to the app we built in Module2. Use MVVM pattern and SwiftUI.
+
+:white_check_mark: `Complete` <br/>
+:grey_exclamation: `Finished Project`
+
+<!--
+# Screenshot of Assignment 2 
+<img src="link to image">
+-->
+
+
+
+
+Project completed by: Auburn University Student for CPSC 5430 - Mobile Applications Development 2 (Fall 2023)
+
+Skeleton Code README.md 
+-------------------------------------------------------------------------------------------------------------
+
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/2rHdeAAY)
 ![alt text](https://github.com/CPSC-5340/Assignment2/blob/main/Docs/banner_au.png?raw=true)
 
