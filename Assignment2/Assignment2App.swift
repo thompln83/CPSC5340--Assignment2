@@ -16,3 +16,11 @@ struct Assignment2App: App {
         }
     }
 }
+
+
+// Terminal: go to local directory
+// git status
+// git add -A
+// git status
+// git commit -m "Your message here"
+// git push
