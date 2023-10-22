@@ -1,9 +1,7 @@
-
-# Assignment: Introduction
-CPSC 5340 - Mobile Applications Development 2: 
+# CPSC 5340 - Mobile Applications Development 2: 
 Assignment-2-Cryptoconvert
 
-Instructions
+Assignment: Instructions -
 Your task is to add the Crypto converter to the app we built in Module2. Use MVVM pattern and SwiftUI.
 
 :white_check_mark: `Complete` <br/>
