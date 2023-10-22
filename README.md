@@ -9,12 +9,11 @@ Your task is to add the Crypto converter to the app we built in Module2. Use MVV
 :white_check_mark: `Complete` <br/>
 :grey_exclamation: `Finished Project`
 
-<!--
+
 # Screenshot of Assignment 2 
+<!--
 <img src="link to image">
 -->
-
-
 
 
 Project completed by: Auburn University Student for CPSC 5430 - Mobile Applications Development 2 (Fall 2023)
