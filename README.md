@@ -15,10 +15,9 @@ Screenshot of Assignment 2
 <img src="link to image">
 -->
 
-
 Project completed by: Auburn University Student for CPSC 5430 - Mobile Applications Development 2 (Fall 2023)
 
-Skeleton Code README.md 
+Skeleton Code README.md below
 -------------------------------------------------------------------------------------------------------------
 
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/2rHdeAAY)
