@@ -10,7 +10,7 @@ Your task is to add the Crypto converter to the app we built in Module2. Use MVV
 :grey_exclamation: `Finished Project`
 
 
-# Screenshot of Assignment 2 
+Screenshot of Assignment 2 
 <!--
 <img src="link to image">
 -->
