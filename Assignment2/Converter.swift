@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct Converter: View {
+    
+    var viewModel = ConverterViewModel()
+    
     var body: some View {
         ScrollView   {
             LazyVGrid(columns: [GridItem(.adaptive(minimum: 150))]) {
@@ -19,6 +22,11 @@ struct Converter: View {
                 CurrencyItem()
                 CurrencyItem()
             }
+            
+        }
+        .onAppear   {
+            viewModel.fetchCards()
+            
         }
     }
 }
