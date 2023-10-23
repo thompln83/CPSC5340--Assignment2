@@ -9,38 +9,37 @@ import SwiftUI
 
 struct CurrencyItem: View {
     
-    @State var isFront = true
+    var card : ConvertModel<CurrencyItemModel>
     
     var body: some View {
-        ZStack  {
-            if isFront  {
-                FrontCurrencyItem()
-            } else {
-                BackCurrencyItem()
-            }
-        } .onTapGesture {
-            isFront.toggle()
+        if card.isFront  {
+            FrontCurrencyItem(card: card.cardContent)
+        } else {
+            BackCurrencyItem(card: card.cardContent)
             
+           }
         }
     }
-}
 
 struct CurrencyItem_Previews: PreviewProvider {
     static var previews: some View {
-        CurrencyItem()
+        CurrencyItem(card: ConvertModel(cardContent: CurrencyItemModel(currencyName: "", currencyCode: "", countryFlag: "", multiplier: 1)))
     }
 }
     
 struct FrontCurrencyItem: View {
+    
+    var card: CurrencyItemModel
+    
     var body: some View {
         VStack {
             HStack {
-                Text("🇺🇸")
+                Text(card.countryFlag)
                 Spacer()
             }
             HStack {
                 Spacer()
-                Text("USD")
+                Text(card.currencyCode)
             }
         }
         .frame(width: 130, height: 130)
@@ -50,15 +49,19 @@ struct FrontCurrencyItem: View {
 }
     
 struct BackCurrencyItem: View {
+    
+    var card: CurrencyItemModel
+
+    
     var body: some View {
         VStack {
             HStack {
-                Text("US Dollar")
+                Text(card.currencyName)
                 Spacer()
             }
             HStack {
                 Spacer()
-                Text(String(1))
+                Text(String(card.multiplier))
             }
         }
         .frame(width: 130, height: 130)

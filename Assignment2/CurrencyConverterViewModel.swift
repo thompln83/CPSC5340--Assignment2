@@ -10,9 +10,9 @@
 
 import Foundation
 
-class ConverterViewModel    {
+class CurrencyConverterViewModel : ObservableObject   {
     
-    private var listOfCards = [ConvertModel]()
+    @Published private(set) var listOfCards = [ConvertModel<CurrencyItemModel>]()
     
     func fetchCards()    {
         self.listOfCards = [
@@ -23,7 +23,23 @@ class ConverterViewModel    {
             ConvertModel(cardContent: CurrencyItemModel(currencyName: "Indian Rupee", currencyCode: "INR", countryFlag: "🇮🇳", multiplier: 82.60)),
             ConvertModel(cardContent: CurrencyItemModel(currencyName: "Chilean Peso", currencyCode: "CLP", countryFlag: "🇨🇱", multiplier: 832.04))
         ]
-    
+        
     }
     
+    func flip(card: ConvertModel<CurrencyItemModel>)  {
+         let index = findIndex(card: card)
+        listOfCards[index!].isFront.toggle()
+
+    }
+    
+    func findIndex(card: ConvertModel<CurrencyItemModel>) -> Int? {
+        for index in 0..<listOfCards.count {
+            if card.id == listOfCards[index].id {
+                return index
+            }
+        }
+        
+        return nil
+    }
 }
+        

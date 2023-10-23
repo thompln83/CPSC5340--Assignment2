@@ -9,9 +9,10 @@
 
 import Foundation
 
-struct ConvertModel {
-    let isFront : Bool = true
-    let cardContent : CurrencyItemModel
+struct ConvertModel<SomeType> : Identifiable  {
+    let id = UUID()
+    var isFront : Bool = true
+    let cardContent : SomeType
     
 }
 
@@ -22,4 +23,11 @@ struct CurrencyItemModel {
     let countryFlag : String
     let multiplier : Double
 
+}
+
+struct CryptoItemModel {
+    let cryptoName : String
+    let cryptoCode : String
+    let multiplier : Double
+    
 }
