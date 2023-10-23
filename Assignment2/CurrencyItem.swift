@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CurrencyItem: View {
     
-    var isFront = true
+    @State var isFront = true
     
     var body: some View {
         ZStack  {
@@ -19,6 +19,7 @@ struct CurrencyItem: View {
                 BackCurrencyItem()
             }
         } .onTapGesture {
+            isFront.toggle()
             
         }
     }
