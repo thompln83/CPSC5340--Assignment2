@@ -6,6 +6,9 @@
 
 // Lauren Thompson CPSC5340 October 2023
 
+// Converter becomes HomeView
+// Two options: World currency and Crypto conversion
+
 import SwiftUI
 
 // Primary content view for grid of currencyCards

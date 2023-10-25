@@ -20,6 +20,7 @@ struct Assignment2App: App {
     }
 }
 
+// Git Notes:
 // Terminal: go to local directory
 // git status
 // git add -A
@@ -28,6 +29,7 @@ struct Assignment2App: App {
 // git push
 
 
+// Project Outline:
 //CryptoConversionApp/
 //│
 //|__ AssignmentApp2.swift
@@ -61,3 +63,4 @@ struct Assignment2App: App {
 //    Info.plist
 //    SceneDelegate.swift
 //
+
