@@ -11,6 +11,7 @@ struct CurrencyItem: View {
     
     var card : ConvertModel<CurrencyItemModel>
     
+    // view based on isFront or isBack
     var body: some View {
         if card.isFront  {
             FrontCurrencyItem(card: card.cardContent)
@@ -21,12 +22,14 @@ struct CurrencyItem: View {
         }
     }
 
+// Preview
 struct CurrencyItem_Previews: PreviewProvider {
     static var previews: some View {
         CurrencyItem(card: ConvertModel(cardContent: CurrencyItemModel(currencyName: "", currencyCode: "", countryFlag: "", multiplier: 1)))
     }
 }
-    
+
+// Currency card Front view: countryFlag, currencyCode
 struct FrontCurrencyItem: View {
     
     var card: CurrencyItemModel
@@ -47,7 +50,8 @@ struct FrontCurrencyItem: View {
         .background(.blue)
     }
 }
-    
+
+// Currency card Back view: currencyName, multiplier
 struct BackCurrencyItem: View {
     
     var card: CurrencyItemModel

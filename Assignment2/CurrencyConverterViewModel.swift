@@ -26,12 +26,14 @@ class CurrencyConverterViewModel : ObservableObject   {
         
     }
     
+    // flips card toggling isFront
     func flip(card: ConvertModel<CurrencyItemModel>)  {
          let index = findIndex(card: card)
         listOfCards[index!].isFront.toggle()
 
     }
     
+    // finds respective card index in listOFCards
     func findIndex(card: ConvertModel<CurrencyItemModel>) -> Int? {
         for index in 0..<listOfCards.count {
             if card.id == listOfCards[index].id {

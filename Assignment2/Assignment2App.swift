@@ -13,10 +13,12 @@ struct Assignment2App: App {
     var body: some Scene {
         WindowGroup {
             Converter()
+            // * Change to Homeview
+            //HomeView()
+
         }
     }
 }
-
 
 // Terminal: go to local directory
 // git status
@@ -24,3 +26,38 @@ struct Assignment2App: App {
 // git status
 // git commit -m "Your message here"
 // git push
+
+
+//CryptoConversionApp/
+//│
+//|__ AssignmentApp2.swift
+//│
+//├── Models/
+//│   │
+//│   ├── ConvertModel.swift       →  CurrencyConvertModel.swift
+//│   └── none                     →  CryptoConvertModel.swift
+//│
+//├── ViewModels/
+//│   │
+//│   ├── CurrencyConverterViewModel.swift  →  CurrencyConverterViewModel.swift
+//│   └── none                              →  CryptoViewModel.swift
+//│
+//├── Views/
+//│   │
+//│   ├── none                      →  CryptoConverterView.swift
+//│   └── ConverterView.swift       →  CurrencyConverterView.swift
+//│
+//├── Services/
+//│   │
+//│   ├── APIManager.swift
+//│   └── DatabaseManager.swift  // If needed for local storage
+//│
+//├── Utils/
+//│   │
+//│   ├── currencyItem.swift       →  currencyItem.swift
+//│   └── none                     →  cryptoItem.swift
+//│
+//└── AppDelegate.swift
+//    Info.plist
+//    SceneDelegate.swift
+//

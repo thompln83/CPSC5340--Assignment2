@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+// Primary content view for grid of currencyCards
 struct Converter: View {
     
     @ObservedObject var viewModel = CurrencyConverterViewModel()
@@ -30,7 +31,8 @@ struct Converter: View {
         }
     }
 }
-            
+
+// Converter view preview
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Converter()

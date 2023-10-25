@@ -16,7 +16,7 @@ struct ConvertModel<SomeType> : Identifiable  {
     
 }
 
-
+// Currency
 struct CurrencyItemModel {
     let currencyName : String
     let currencyCode : String
@@ -25,6 +25,7 @@ struct CurrencyItemModel {
 
 }
 
+// Crypto
 struct CryptoItemModel {
     let cryptoName : String
     let cryptoCode : String
