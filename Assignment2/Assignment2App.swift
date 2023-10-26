@@ -30,14 +30,27 @@ struct ConversionAppHomeView: View {
                 // Navigation Link
                 NavigationLink(destination: Converter()) {
                     Text("World Currency")
+                    //styling
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                
                 }
                 
                 // Creates CryptoConverterView for crypto
                 // Navigation Link
                 NavigationLink(destination: CryptoConverter()) {
                     Text("Crypto Converter")
+                    //styling
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                    
                 }
             }
+            // App Title
             .navigationBarTitle("Conversion App", displayMode: .large)
         }
     }
@@ -53,57 +66,53 @@ struct ConversionAppHomeView: View {
 // git commit -m "Your message here"
 // git push
 
-
-// Project Outline:
-//CryptoConversionApp/
-//│
-//|__ AssignmentApp2.swift
-      // ConversionAppHomeView() -> Converter ($) & CryptoConverter
-//│
-//├── Models/
-//│   │
-//│   ├── ConvertModel.swift
-//│   |  // -> CurrencyItemModel
-//|   |  // -> CryptoItemModel
-//|   |__ CryptoConvertModel.swift
-//|   |  //-> CryptoItemModel ?
-//|   |__
-//|  
-//|
-//├── ViewModels/
-//│   │
-//│   ├── CurrencyConverterViewModel
-//|   |     // -> ConvertModel
-//|   |     // -> ConvertItemModel
-//|   |     // -> ConvertModel<CurrencyItemModel>)
-//│   └─  CryptoConverterViewModel.swift
-//|   |
-//|   |_
-//│
-//|
-//├── Views/
-//│   │
-//│   ├── Converter.swift
-//|   |        // →  CurrencyConverterViewModel
-//|   |        // -> CurrencyItem
-//|   |__ CurrencyItem.swift
-//|   |
-//|   |__ CryptoConverter.swift
-//|   |
-//|   |__ Converter.swift
-//│   |_
-//|
-//|
-//│
-//├── Services/
-//│   │
-//│   ├── APIManager.swift
-//│   └── DatabaseManager.swift  // If needed for local storage
-//│
-//├── Utils/
-//│   │
-//│   ├── →  Converter.swift
-//│   └── →  CryptoConverter.swift
-//│__
 //
+// Project Assignment 2: CryptoConversion App Outline
+//
+//|__ AssignmentApp2.swift
+//|      // ConversionAppHomeView() -> Converter ($) & CryptoConverter
+//│
+//|── ConvertModel.swift
+//│  // -> CurrencyItemModel
+//|  // -> CryptoItemModel ?
+//|
+//|__ CryptoConvertModel.swift ?
+//|  // -> CryptoItemModel
+//|
+//|__ CurrencyItem.swift
+//|  // -> ConvertModel<CurrencyItemModel
+//|  // -> FrontCurrencyItem(card: card.cardContent)
+//|  // -> BackCurrencyItem(card: card.cardContent)
+//|  // -> CurrencyItem(card: ConvertModel(cardContent:  
+//|  //    CurrencyItemModel
+//|
+//|
+//|__ CryptoCurrencyItem.swift
+//|  // -> CryptoConvertModel<CurrencyItemModel
+//|  // -> CryptoCurrencyItem(card: CryptoConvertModel(cryptoCardContent:
+//|  //    CryptoItemModel
+//|
+//|
+//|── Converter.swift
+//|   // -→  CurrencyConverterViewModel
+//|   // ->  CurrencyItem
+//|
+//|
+//|__ CryptoConverter.swift
+//|   // -→  CryptoCurrencyConverterViewModel
+//|   // ->  CryptoItem
+//|
+//|
+//│── CurrencyConverterViewModel
+//|   // -> ConvertModel
+//|   // -> ConvertItemModel
+//|   // -> ConvertModel<CurrencyItemModel>)
+//│
+//|__ CryptoConverterViewModel.swift
+//|   // -> CryptoConvertModel
+//|   // -> CryptoConvertItemModel
+//|   // -> CryptoConvertModel<CryptoItemModel>)
+//|
+//|
+//|__
 
