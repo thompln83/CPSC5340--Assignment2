@@ -13,8 +13,7 @@ struct Assignment2App: App {
     var body: some Scene {
         WindowGroup {
             // Converter()
-            // * Change to Homeview
-            //ConversionAppHomeView()
+            // * Change to ConversionAppHomeView()
             ConversionAppHomeView()
             
         }
@@ -35,12 +34,11 @@ struct ConversionAppHomeView: View {
                         .background(Color.blue)
                         .foregroundColor(.white)
                         .cornerRadius(10)
-                
                 }
                 
                 // Creates CryptoConverterView for crypto
                 // Navigation Link
-                NavigationLink(destination: CryptoConverter()) {
+                NavigationLink(destination: CryptoConverterView()) {
                     Text("Crypto Converter")
                     //styling
                         .padding()
@@ -56,6 +54,13 @@ struct ConversionAppHomeView: View {
     }
 }
 
+struct ConversionAppHomeView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationView {
+            ConversionAppHomeView()
+        }
+    }
+}
 
 
 // Git Notes:
@@ -74,10 +79,11 @@ struct ConversionAppHomeView: View {
 //│
 //|── ConvertModel.swift
 //│  // -> CurrencyItemModel
-//|  // -> CryptoItemModel ?
+//|  // -> ConvertModel<SomeType> : Identifiable 
 //|
 //|__ CryptoConvertModel.swift ?
 //|  // -> CryptoItemModel
+//|  // -> CryptoConvertModel<SomeType> : Identifiable
 //|
 //|__ CurrencyItem.swift
 //|  // -> ConvertModel<CurrencyItemModel
@@ -90,7 +96,7 @@ struct ConversionAppHomeView: View {
 //|__ CryptoCurrencyItem.swift
 //|  // -> CryptoConvertModel<CurrencyItemModel
 //|  // -> CryptoCurrencyItem(card: CryptoConvertModel(cryptoCardContent:
-//|  //    CryptoItemModel
+//|  // -> CryptoItemModel
 //|
 //|
 //|── Converter.swift
@@ -115,4 +121,3 @@ struct ConversionAppHomeView: View {
 //|
 //|
 //|__
-

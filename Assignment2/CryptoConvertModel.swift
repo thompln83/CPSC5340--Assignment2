@@ -17,27 +17,14 @@
 
 import Foundation
 
-//Contains the model for the Crypto converter.
 struct CryptoConvertModel<SomeType> : Identifiable  {
     let id = UUID()
-    var isFront : Bool = true
-    let cardContent : SomeType
-        
-    }
+    var name: String
+    var priceInUSD: Double
+}
 
-//    // Currency
-//    struct CurrencyItemModel {
-//        let currencyName : String
-//        let currencyCode : String
-//        let countryFlag : String
-//        let multiplier : Double
-//
-//    }
 
-    // Crypto
-    struct CryptoItemModel {
-        let cryptoName : String
-        let cryptoCode : String
-        let multiplier : Double
-        
-    }
+struct Crypto {
+    let cryptoName: String
+    let priceInUSD: Double
+}

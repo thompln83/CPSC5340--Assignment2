@@ -25,10 +25,3 @@ struct CurrencyItemModel {
 
 }
 
-//// Crypto
-//struct CryptoItemModel {
-//    let cryptoName : String
-//    let cryptoCode : String
-//    let multiplier : Double
-//    
-//}
