@@ -12,6 +12,7 @@
 import SwiftUI
 
 // Primary content view for grid of currencyCards
+// HomeView incorporates Converter
 struct Converter: View {
     
     @ObservedObject var viewModel = CurrencyConverterViewModel()

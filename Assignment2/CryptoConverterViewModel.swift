@@ -10,12 +10,12 @@
 
 //CryptoConvertModel.swift: Contains the model for the Crypto converter.
 //
-//CryptoViewModel.swift: Contains the ViewModel for the Crypto converter.
+//CryptoConverterViewModel.swift: Contains the ViewModel for the Crypto converter.
 //
 //CryptoConverterView.swift: Contains the View for the Crypto converter.
 
 import Foundation
 
-struct CryptoViewModel {
+struct CryptoConverterViewModel {
     
 }

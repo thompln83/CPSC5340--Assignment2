@@ -12,13 +12,38 @@ import SwiftUI
 struct Assignment2App: App {
     var body: some Scene {
         WindowGroup {
-            Converter()
+            // Converter()
             // * Change to Homeview
-            //HomeView()
+            //ConversionAppHomeView()
+            ConversionAppHomeView()
+            
+        }
+        
+    }
+}
 
+struct ConversionAppHomeView: View {
+    var body: some View {
+        NavigationView {
+            VStack(spacing: 20) {
+                // Incorporates Converter for currency
+                // Navigation Link
+                NavigationLink(destination: Converter()) {
+                    Text("World Currency")
+                }
+                
+                // Creates CryptoConverterView for crypto
+                // Navigation Link
+                NavigationLink(destination: CryptoConverter()) {
+                    Text("Crypto Converter")
+                }
+            }
+            .navigationBarTitle("Conversion App", displayMode: .large)
         }
     }
 }
+
+
 
 // Git Notes:
 // Terminal: go to local directory
@@ -33,21 +58,42 @@ struct Assignment2App: App {
 //CryptoConversionApp/
 //│
 //|__ AssignmentApp2.swift
+      // ConversionAppHomeView() -> Converter ($) & CryptoConverter
 //│
 //├── Models/
 //│   │
-//│   ├── ConvertModel.swift       →  CurrencyConvertModel.swift
-//│   └── none                     →  CryptoConvertModel.swift
-//│
+//│   ├── ConvertModel.swift
+//│   |  // -> CurrencyItemModel
+//|   |  // -> CryptoItemModel
+//|   |__ CryptoConvertModel.swift
+//|   |  //-> CryptoItemModel ?
+//|   |__
+//|  
+//|
 //├── ViewModels/
 //│   │
-//│   ├── CurrencyConverterViewModel.swift  →  CurrencyConverterViewModel.swift
-//│   └── none                              →  CryptoViewModel.swift
+//│   ├── CurrencyConverterViewModel
+//|   |     // -> ConvertModel
+//|   |     // -> ConvertItemModel
+//|   |     // -> ConvertModel<CurrencyItemModel>)
+//│   └─  CryptoConverterViewModel.swift
+//|   |
+//|   |_
 //│
+//|
 //├── Views/
 //│   │
-//│   ├── none                      →  CryptoConverterView.swift
-//│   └── ConverterView.swift       →  CurrencyConverterView.swift
+//│   ├── Converter.swift
+//|   |        // →  CurrencyConverterViewModel
+//|   |        // -> CurrencyItem
+//|   |__ CurrencyItem.swift
+//|   |
+//|   |__ CryptoConverter.swift
+//|   |
+//|   |__ Converter.swift
+//│   |_
+//|
+//|
 //│
 //├── Services/
 //│   │
@@ -56,11 +102,8 @@ struct Assignment2App: App {
 //│
 //├── Utils/
 //│   │
-//│   ├── currencyItem.swift       →  currencyItem.swift
-//│   └── none                     →  cryptoItem.swift
-//│
-//└── AppDelegate.swift
-//    Info.plist
-//    SceneDelegate.swift
+//│   ├── →  Converter.swift
+//│   └── →  CryptoConverter.swift
+//│__
 //
 
