@@ -32,32 +32,3 @@ class CryptoConverterViewModel: ObservableObject {
     }
 }
 
-//import Foundation
-//
-//class CryptoConverterViewModel: ObservableObject {
-//    @Published var cryptos: [Crypto] = [
-//        // Example $USD value per Bitcoin: $3500 USD
-//        Crypto(cryptoName: "Bitcoin", priceInUSD: 35000),
-//        
-//        // Example $USD value per Ethereum: $1500 USD
-//        Crypto(cryptoName: "Ethereum", priceInUSD: 1500),
-//        
-//        // Example $USD value per Tether: $1 USD
-//        Crypto(cryptoName: "Tether", priceInUSD: 1),
-//        
-//        // Example $USD value per BNB: $225 USD
-//        Crypto(cryptoName: "BNB", priceInUSD: 225),
-//        
-//        // Example $USD value per USD Coin: $1.00 USD
-//        Crypto(cryptoName: "USD Coin",priceInUSD: 1.00),
-//        
-//        // Example $USD value per XRP: $0.56 USD
-//        Crypto(cryptoName: "XRP", priceInUSD: 0.56),
-//    ]
-//    
-//    // function to take crypto amount & convert to $ USD
-//    func convertToUSD(cryptoName: Crypto, amount: Double) -> Double {
-//        return amount * cryptoName.priceInUSD
-//    }
-//}
-

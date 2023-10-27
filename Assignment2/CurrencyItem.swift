@@ -4,6 +4,9 @@
 //
 //  Created by Lauren Thompson on 10/22/23.
 //
+// 
+//  Lauren Thompson CPSC5340 October 2023
+
 
 import SwiftUI
 

@@ -1,11 +1,12 @@
 //
 // Assignment2App.swift : Assignment2
 //
-//  Created by Lauren Thompson on 10/22/23.
+// Created by Lauren Thompson on 10/22/23.
 //
 // Copyright © 2023 Auburn University.
 // All Rights Reserved.
-
+//
+//
 // Lauren Thompson CPSC5340 October 2023
 
 import SwiftUI
@@ -48,67 +49,3 @@ struct ConversionAppHomeView_Previews: PreviewProvider {
         ConversionAppHomeView()
     }
 }
-
-
-
-//          Git Notes:      //
-// Terminal: go to local directory
-// git status
-// git add -A
-// git status
-// git commit -m "Your message here"
-// git push
-
-
-//       Project Assignment 2: CryptoConversion App Outline     //
-
-//|__ AssignmentApp2.swift
-//|      // ConversionAppHomeView() -> Converter ($) & CryptoConverter
-//|      // NavigationView & Navigation Link
-//│
-//|── ConvertModel.swift
-//│  // -> CurrencyItemModel
-//|  // -> ConvertModel<SomeType> : Identifiable 
-//|
-//|__ CryptoConvertModel.swift
-//|  // -> ConvertModel<CurrencyItemModel>
-//|  // -> CryptoItemModel
-//|  // -> CryptoConvertModel<SomeType> : Identifiable
-//|  // -> Crypto
-//|
-//|__ CurrencyItem.swift
-//|  // -> ConvertModel<CurrencyItemModel
-//|  // -> FrontCurrencyItem(card: card.cardContent)
-//|  // -> BackCurrencyItem(card: card.cardContent)
-//|  // -> CurrencyItem(card: ConvertModel(cardContent:  
-//|  // -> CurrencyItemModel
-//|  // -> FrontCurrencyItem
-//|
-//|__ CryptoItem.swift
-//|  // -> CryptoConvertModel<CurrencyItemModel
-//|  // -> CryptoCurrencyItem(card: CryptoConvertModel(cryptoCardContent:
-//|  // -> CryptoItemModel
-//|
-//|
-//|── Converter.swift
-//|   // -→  CurrencyConverterViewModel
-//|   // ->  CurrencyItem
-//|
-//|
-//|__ CryptoConverter.swift
-//|   // -→  CryptoCurrencyConverterViewModel
-//|   // ->  CryptoItem
-//|
-//|
-//│── CurrencyConverterViewModel
-//|   // -> ConvertModel
-//|   // -> ConvertItemModel
-//|   // -> ConvertModel<CurrencyItemModel>)
-//│
-//|__ CryptoConverterViewModel.swift
-//|   // -> CryptoConvertModel
-//|   // -> CryptoConvertItemModel
-//|   // -> CryptoConvertModel<CryptoItemModel>)
-//|
-//|
-//|__
