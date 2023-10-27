@@ -12,7 +12,7 @@ Screenshot of Assignment 2
 
 # Screenshots of Assignment 2 
 
-<img src="[link to image](https://github.com/CPSC-5340/cryptoconvert-assignment2-thompln83/blob/cc778e40592e2fc1992804801d010bacb0dd004f/Docs/CryptoConvertApp%20Home%20Screen%20.png)">
+<img src = "https://github.com/CPSC-5340/cryptoconvert-assignment2-thompln83/blob/cc778e40592e2fc1992804801d010bacb0dd004f/Docs/CryptoConvertApp%20Home%20Screen%20.png">
 
 
 Project completed by: Auburn University Student for CPSC 5430 - Mobile Applications Development 2 (Fall 2023)
