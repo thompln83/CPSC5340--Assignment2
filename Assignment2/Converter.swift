@@ -28,18 +28,18 @@ struct Converter: View {
                         }
                 }
             }
-        }
-    
-        .onAppear   {
-            viewModel.fetchCards()
+                 
+            .onAppear   {
+                viewModel.fetchCards()
+            }
         }
     }
 }
-
+        
+         
 // Converter view preview
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Converter()
     }
 }
-

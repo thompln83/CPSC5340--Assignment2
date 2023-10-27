@@ -9,7 +9,7 @@
 import SwiftUI
 
 @main
-struct Assignment2: App {
+struct Assignment2App: App {
     var body: some Scene {
         WindowGroup {
             ConversionAppHomeView()
