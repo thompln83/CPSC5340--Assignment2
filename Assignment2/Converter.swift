@@ -19,13 +19,21 @@ struct Converter: View {
     
     var body: some View {
         ScrollView   {
-            LazyVGrid(columns: [GridItem(.adaptive(minimum: 150))]) {
+            
+            VStack {
+                Text("1 USD Exchange Rate")
+                    .font(.title3)
+                    .padding(.top, 10)
+                    .padding(.bottom, 20) // Adjust padding as desired
                 
-                ForEach(viewModel.listOfCards) { card in
-                    CurrencyItem(card: card)
-                        .onTapGesture {
-                            viewModel.flip(card: card)
-                        }
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 150))]) {
+                    
+                    ForEach(viewModel.listOfCards) { card in
+                        CurrencyItem(card: card)
+                            .onTapGesture {
+                                viewModel.flip(card: card)
+                            }
+                    }
                 }
             }
                  

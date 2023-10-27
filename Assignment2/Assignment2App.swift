@@ -1,6 +1,8 @@
 //
 // Assignment2App.swift : Assignment2
 //
+//  Created by Lauren Thompson on 10/22/23.
+//
 // Copyright © 2023 Auburn University.
 // All Rights Reserved.
 
@@ -28,7 +30,7 @@ struct ConversionAppHomeView: View {
                 NavigationLink("World Currency Exchange", destination: Converter())
                 
                 // Crypto CryptoConverter()
-                NavigationLink("Crypto Exchange Details", destination: CryptoConverter())
+                NavigationLink("Crypto Exchange Details", destination: CryptoItem())
             }
             
             
