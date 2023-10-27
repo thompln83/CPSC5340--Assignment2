@@ -11,7 +11,7 @@
 import SwiftUI
 
 // CryptoConverView 
-struct CryptoConverterView: View {
+struct CryptoConverter: View {
     
     @StateObject var viewModel = CryptoConverterViewModel()
     
@@ -60,9 +60,9 @@ struct CryptoConverterView: View {
     }
     
     // Converter view preview
-    struct CryptoConverterView_Previews: PreviewProvider {
+    struct CryptoConverter_Previews: PreviewProvider {
         static var previews: some View {
-            CryptoConverterView()
+            CryptoConverter()
             
         }
     }

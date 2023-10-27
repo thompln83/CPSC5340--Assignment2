@@ -9,61 +9,47 @@
 import SwiftUI
 
 @main
-struct Assignment2App: App {
+struct Assignment2: App {
     var body: some Scene {
         WindowGroup {
-            // Converter()
-            // * Change to ConversionAppHomeView()
             ConversionAppHomeView()
-            
         }
-        
     }
 }
 
+//@main
 struct ConversionAppHomeView: View {
     var body: some View {
+        
         NavigationView {
-            VStack(spacing: 20) {
-                // Incorporates Converter for currency
-                // Navigation Link
-                NavigationLink(destination: Converter()) {
-                    Text("World Currency")
-                    //styling
-                        .padding()
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                }
+            
+            List {
+                // Currency Converter()
+                NavigationLink("World Currency Exchange", destination: Converter())
                 
-                // Creates CryptoConverterView for crypto
-                // Navigation Link
-                NavigationLink(destination: CryptoConverterView()) {
-                    Text("Crypto Converter")
-                    //styling
-                        .padding()
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                    
-                }
+                // Crypto CryptoConverter()
+                NavigationLink("Crypto Exchange Details", destination: CryptoConverter())
             }
+            
+            
             // App Title
             .navigationBarTitle("Conversion App", displayMode: .large)
+            
         }
     }
 }
-
+            
+// Preview
 struct ConversionAppHomeView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView {
-            ConversionAppHomeView()
-        }
+        // NavigationView {
+        ConversionAppHomeView()
     }
 }
 
 
-// Git Notes:
+
+//          Git Notes:      //
 // Terminal: go to local directory
 // git status
 // git add -A
@@ -71,29 +57,32 @@ struct ConversionAppHomeView_Previews: PreviewProvider {
 // git commit -m "Your message here"
 // git push
 
-//
-// Project Assignment 2: CryptoConversion App Outline
-//
+
+//       Project Assignment 2: CryptoConversion App Outline     //
+
 //|__ AssignmentApp2.swift
 //|      // ConversionAppHomeView() -> Converter ($) & CryptoConverter
+//|      // NavigationView & Navigation Link
 //│
 //|── ConvertModel.swift
 //│  // -> CurrencyItemModel
 //|  // -> ConvertModel<SomeType> : Identifiable 
 //|
-//|__ CryptoConvertModel.swift ?
+//|__ CryptoConvertModel.swift
+//|  // -> ConvertModel<CurrencyItemModel>
 //|  // -> CryptoItemModel
 //|  // -> CryptoConvertModel<SomeType> : Identifiable
+//|  // -> Crypto
 //|
 //|__ CurrencyItem.swift
 //|  // -> ConvertModel<CurrencyItemModel
 //|  // -> FrontCurrencyItem(card: card.cardContent)
 //|  // -> BackCurrencyItem(card: card.cardContent)
 //|  // -> CurrencyItem(card: ConvertModel(cardContent:  
-//|  //    CurrencyItemModel
+//|  // -> CurrencyItemModel
+//|  // -> FrontCurrencyItem
 //|
-//|
-//|__ CryptoCurrencyItem.swift
+//|__ CryptoItem.swift
 //|  // -> CryptoConvertModel<CurrencyItemModel
 //|  // -> CryptoCurrencyItem(card: CryptoConvertModel(cryptoCardContent:
 //|  // -> CryptoItemModel

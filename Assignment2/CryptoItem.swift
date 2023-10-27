@@ -33,7 +33,7 @@ struct CryptoItem: View {
     }
 }
 
-struct ConversionScreen_Previews: PreviewProvider {
+struct CryptoItem_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             CryptoItem()
